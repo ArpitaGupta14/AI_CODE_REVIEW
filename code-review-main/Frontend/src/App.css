@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  font-family: 'Fira Code', monospace;
+  background-color: #1e1e1e;
+  color: #f8f8f2;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+main .left,
+main .right {
+  height: 100%;
+  flex-basis: 50%;
+  border-radius: 0.7rem;
+  overflow: auto;
+}
+
+main .left {
+  background-color: #1e1e1e;
+  position: relative;
+  padding: 1rem;
+}
+
+.left .code {
+  height: calc(100% - 60px);
+  width: 100%;
+  border-radius: 0.7rem;
+  background-color: #1e1e1e;
+  color: #f8f8f2;
+  overflow: auto;
+  font-size: 1rem;
+  padding: 1rem;
+  border: 1px solid #444;
+  box-shadow: 0 0 10px #00000055;
+}
+
+main .left .review {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: #4ade80;
+  color: #000000;
+  padding: 0.6rem 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s ease;
+}
+
+main .left .review:hover {
+  background-color: #22c55e;
+}
+
+main .right {
+  background-color: #2a2a2a;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  color: #ffffff;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  border: 1px solid #444;
+  box-shadow: 0 0 10px #00000055;
+}
